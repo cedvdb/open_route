@@ -5,6 +5,8 @@ This library provides a server agnostic way of handling requests.
 
 # Usage
 
+The simplest way of getting familiar with the library is to just read the source code as it is very simple.
+
 ### 1. declare your handler
 
 ```ts

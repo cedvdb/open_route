@@ -1,0 +1,13 @@
+{
+  "name": "open_route",
+  "description": "Server agnostic routing interface",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.3.1"
+  }
+}

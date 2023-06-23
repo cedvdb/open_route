@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "npm",
+    "all-contributors",
+    "first-time-contributor"
+  ],
+  "baseBranch": "main",
+  "prereleaseBranches": [
+    "next"
+  ]
+}

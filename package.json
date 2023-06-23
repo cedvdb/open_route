@@ -5,9 +5,15 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [],
-  "author": "",
+  "author": "cedvdb <cedvandenbosch@gmail.com>",
   "license": "ISC",
+  "scripts": {
+    "build": "tsc",
+    "release": "npm run build && auto shipit"
+  },
   "devDependencies": {
-    "@types/node": "^20.3.1"
-  }
+    "@types/node": "^20.3.1",
+    "auto": "^10.46.0"
+  },
+  "repository": "cedvdb/open_route"
 }

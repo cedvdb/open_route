@@ -1,11 +1,12 @@
-# open_route ( Prototype )
+# open_route ( Prototype demo )
 
 This library provides a server agnostic way of handling requests.
 
+# Why
+
+The goal of this library is to give common grounds for toolings.
 
 # Usage
-
-The simplest way of getting familiar with the library is to just read the source code as it is very simple.
 
 ### 1. declare your handler
 
@@ -24,7 +25,7 @@ export interface CreateAccountResponseBody {
   id: string;
 }
 
-export class CreateAccountRoute extends Route<CreateAccountRequest, CreateAccountResponseBody> {
+export class CreateAccountRoute implements Route<CreateAccountRequest, CreateAccountResponseBody> {
   readonly path = `/account`;
   readonly method = HttpMethod.post;
 

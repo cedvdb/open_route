@@ -3,7 +3,7 @@ import { HttpMethod } from './http_method';
 import { HttpPath } from './http_path';
 import { FailureResponse, InternalErrorResponse, OkResponse, RedirectResponse } from './response';
 
-export type HandlerResult<T> = OkResponse<T> | RedirectResponse | FailureResponse | InternalErrorResponse;
+export type HandlerResponse<T> = OkResponse<T> | RedirectResponse | FailureResponse | InternalErrorResponse;
 
 
 /**
@@ -15,5 +15,5 @@ export interface Route<Request, ResponseBody> {
   /** The http method to be used to access this endpoint */
   method: HttpMethod;
 
-  handle: (request: Request) => Promise<HandlerResult<ResponseBody>>;
+  handle: (request: Request) => Promise<HandlerResponse<ResponseBody>>;
 }
